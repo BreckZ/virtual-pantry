@@ -19,7 +19,7 @@ function NewItem() {
       uofm,
       location,
     }
-    
+
     await addItem(fields);
     
     history.push(`/`);
