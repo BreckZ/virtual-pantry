@@ -10,7 +10,7 @@ function ItemForm(props) {
       <input
         type="number"
         value={props.quantity}
-        onChange={(e) => props.setQuantity(e.target.value)}
+        onChange={(e) => props.setQuantity(e.target.valueAsNumber)}
       />
       <br />
       <label>UofM</label>

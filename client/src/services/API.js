@@ -21,3 +21,9 @@ export const addItem = async (fields) => {
   return res.data;
 };
 
+// not in use yet
+export const changeItem = async () => {
+  const res = await axios.put(URL, config);
+  return res.data;
+};
+

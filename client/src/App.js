@@ -6,6 +6,9 @@ import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ListItems from './components/ListItems';
 import NewItem from './components/NewItem';
+import Counter from './components/Counter';
+import Search from './components/Search';
+
 import './App.css';
 
 
@@ -16,12 +19,15 @@ function App() {
 
       <Navbar />
 
-      <Route path="/search">
+      <Route path="/search">        
+        <Search />
       </Route>
 
       <Route exact path="/pantry">
         <NewItem />
         <ListItems />
+        <br />
+        <Counter />
       </Route>
 
 

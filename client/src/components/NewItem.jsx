@@ -5,7 +5,7 @@ import ItemForm from './ItemForm';
 
 function NewItem() {
   const [name, setName] = useState('');
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState('');
   const [uofm, setUofM] = useState('');
   const [location, setLocation] = useState('');
 
@@ -24,7 +24,7 @@ function NewItem() {
     
     history.push(`/`);
   };
-  
+  console.log(typeof quantity);
 
   return (
     <div>

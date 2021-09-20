@@ -1,34 +1,40 @@
 import { useState, useEffect } from 'react';
 import { getItems } from '../services/API';
 import { Link } from 'react-router-dom';
-import Counter from './Counter';
+import SearchBar from './SearchBar';
 
 const displayContainer = {
   
-  
 }
 
-function ListItems() {
-  const [itemNames, setItemNames] = useState([]);
+function Search() {
+  const [searchName, setSearchName] = useState('');
+  const [items, setItems] = useState([]);
+  const [filterItems,setFilterItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchItems = async () => {
       const res = await getItems();          
-      setItemNames(res);
-      console.log("mapping over the api");
-      console.log(res);
+      setItems(res);
       setLoading(false);
     }
     fetchItems();                            
   }, [])
-
+  
+  
+  useEffect(() => {
+    const filter = items.filter((item) => item.fields.name.includes(searchName));
+    setFilterItems(filter);
+  },[searchName])
+  
   if (loading) return <div></div>;
 
-  
+
   return (
     <div>
-      {itemNames.map((item) => {
+      <SearchBar searchName={searchName} setSearchName={setSearchName}/>
+      {filterItems.map((item) => {
         return (
           <Link to={`/items/${item.id}`} key={item.id}>
             <div style={displayContainer}>
@@ -42,9 +48,8 @@ function ListItems() {
           </Link>
         );
       })}
-      <Counter />
     </div>
   )
 }
 
-export default ListItems;
+export default Search;
