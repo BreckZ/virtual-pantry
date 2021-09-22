@@ -69,11 +69,11 @@ function Search(props) {
         return (
           <div style={displayContainer} key={item.id}>
             <button onClick={() => { handleDecrement(item) }}>-</button>
-            <span>{item.fields.quantity}</span>
+            <span> {item.fields.quantity} </span>
             <button onClick={() => { handleIncrement(item) }}>+</button>
-            <span>{item.fields.uofm}</span>
-            <span>{item.fields.name}</span>
-            <span>{item.fields.location}</span>
+            <span> {item.fields.uofm} </span>
+            <span> {item.fields.name} </span>
+            <span> {item.fields.location} </span>
             <button onClick={() => handleDelete(item.id)}>delete</button>
           </div>
         );
