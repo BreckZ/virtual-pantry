@@ -16,6 +16,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Route path="/">
+        </Route>
       <br />
       <Route path="/search">  
         <Search />

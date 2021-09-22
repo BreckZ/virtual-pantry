@@ -1,32 +1,44 @@
-import 'antd/dist/antd.css'
-import { Switch } from 'antd'
 import { useState } from 'react';
-
+import Switch from 'rc-switch'
+import 'rc-switch/assets/index.css'
 
 function ItemForm(props) {
   const [pantry, setPantry] = useState(false)
   const [fridge, setFridge] = useState(false)
   const [freezer, setFreezer] = useState(false)
 
+
   const handlePantrySwitch = (e) => {
 
     props.setLocation("pantry")
-    setFridge(false)
-    setFreezer(false)
+    setPantry(false)
+    setFridge(prevFridge => !prevFridge)
+    setFreezer(prevFreezer => !prevFreezer)
+
+
   }
 
   const handleFridgeSwitch = (e) => {
     // props.setLocation(e.target.value);
     props.setLocation("fridge")
-    setPantry(false)
-    setFreezer(false)
+    setFridge(false)
+    setPantry(prevPantry => !prevPantry)
+    setFreezer(prevFreezer => !prevFreezer)
+
   }
 
   const handleFreezerSwitch = (e) => {
     // props.setLocation(e.target.value);
     props.setLocation("freezer")
-    setPantry(false)
-    setFridge(false)
+    setFreezer(false)
+    setPantry(prevPantry => !prevPantry)
+    setFridge(prevFridge => !prevFridge)
+
+  }
+
+  const handleAdd = (e) => {
+    props.handleSubmit(e)
+
   }
 
   const checkIfDisabled = () => {
@@ -35,7 +47,7 @@ function ItemForm(props) {
   }
 
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form onSubmit={handleAdd}>
       <input
         type="number"
         value={props.quantity}
@@ -63,18 +75,17 @@ function ItemForm(props) {
         onChange={(e) => props.setLocation(e.target.value)}
         placeholder="Location"
       /> */}
+
       <div>
-        <Switch onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />
-        pantry
+        <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />pantry
       </div>
       <div>
-        <Switch onChange={(fridge) => { setFridge(fridge) }} onClick={(e) => handleFridgeSwitch(e)} />
-        fridge
+        <Switch disabled={fridge} onChange={(fridge) => { setFridge(fridge) }} onClick={(e) => handleFridgeSwitch(e)} />fridge
       </div>
       <div>
-        <Switch onChange={(freezer) => { setFreezer(freezer) }} onClick={(e) => handleFreezerSwitch(e)} />
-        freezer
+        <Switch disabled={freezer} onChange={(freezer) => { setFreezer(freezer) }} onClick={(e) => handleFreezerSwitch(e)} />freezer
       </div>
+
       <button disabled={checkIfDisabled()}>Add</button>
     </form>
   )
