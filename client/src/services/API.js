@@ -22,8 +22,13 @@ export const addItem = async (fields) => {
 };
 
 // not in use yet
-export const changeItem = async () => {
-  const res = await axios.put(URL, config);
+export const changeQuantity = async (field, id) => {
+  const res = await axios.patch(`${URL}/${id}`, { fields: field }, config);
+  return res.data;
+};
+
+export const deleteItem = async (id) => {
+  const res = await axios.delete(`${URL}/${id}`, config);
   return res.data;
 };
 
