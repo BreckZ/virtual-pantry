@@ -1,0 +1,26 @@
+.NavbarFooter {
+  grid-row-start: 1;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray;
+  padding:5% 4% 5% 4%;
+  bottom: 0;
+}
+
+
+@media screen and (min-width: 600px) {
+  
+  .NavbarFooter {
+    display: none;
+  
+    
+    
+  }
+  
+}
+
+
+@media screen and (max-width: 420px) {
+  
+  
+}

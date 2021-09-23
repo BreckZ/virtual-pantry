@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { changeQuantity, deleteItem, getItems } from '../services/API';
-
-const displayContainer = {
-
-}
+import './ListItems.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinus} from "@fortawesome/free-solid-svg-icons";
+import { faPlus} from "@fortawesome/free-solid-svg-icons";
 
 function ListItems(props) {
   const [itemNames, setItemNames] = useState([]);
@@ -51,8 +51,7 @@ function ListItems(props) {
 
 
   return (
-    <div>
-
+    <div className="listitems-container">
       <br />
       <button>Pantry</button>
       <button>Fridge</button>
@@ -61,10 +60,12 @@ function ListItems(props) {
       <br />
       {itemNames.map((item) => {
         return (
-          <div style={displayContainer} key={item.id}>
-            <button onClick={() => { handleDecrement(item) }}>-</button>
+          <div className="form-inputs" key={item.id}>
+            {/* <button onClick={() => { handleDecrement(item) }}>-</button> */}
+            <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" />
             <span> {item.fields.quantity} </span>
-            <button onClick={() => { handleIncrement(item) }}>+</button>
+            {/* <button onClick={() => { handleIncrement(item) }}>+</button> */}
+            <FontAwesomeIcon onClick={() => { handleIncrement(item) }} className="increment" icon={faPlus} size="sm" />
             <span> {item.fields.uofm} </span>
             <span> {item.fields.name} </span>
             <span> {item.fields.location} </span>

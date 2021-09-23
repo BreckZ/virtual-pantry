@@ -1,16 +1,16 @@
-import React from 'react';
-import Switch from 'rc-switch';
+// import React from 'react';
+// import Switch from 'rc-switch';
 
-import './Toggle.css'
+// import './Toggle.css'
 
 
 
-function Toggle(props) {
-  return (
-    <span>
-      <Switch disabled={props.toggled} />
-      </span>
-  )
-}
+// function Toggle(props) {
+//   return (
+//     <span>
+//       <Switch disabled={props.toggled} />
+//       </span>
+//   )
+// }
 
-export default Toggle
+// export default Toggle

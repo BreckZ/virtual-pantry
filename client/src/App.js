@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 //Internal Imports (i.e.)
 import Navbar from './components/Navbar';
+import NavbarFooter from './components/NavbarFooter';
 import ListItems from './components/ListItems';
 import NewItem from './components/NewItem';
 import Search from './components/Search';
@@ -17,18 +18,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Route path="/">
-        </Route>
-      <br />
-      <Route path="/search">  
+      </Route>
+
+      <Route path="/search">
         <Search />
       </Route>
 
       <Route exact path="/pantry">
-        <NewItem name={name} setName={setName}/>
-        <ListItems name={name}/>
-        <br />
+        <ListItems name={name} />
+        <NewItem name={name} setName={setName} />
       </Route>
-
+      <NavbarFooter />
     </div>
   );
 }

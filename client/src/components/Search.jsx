@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getItems, changeQuantity, deleteItem } from '../services/API';
 import SearchBar from './SearchBar';
+import './Search.css'
 
 const displayContainer = {
 
@@ -61,10 +62,11 @@ function Search(props) {
   }
 
   return (
-    <div>
+    <>
+      <div className="search-bar">
       <SearchBar searchName={searchName} setSearchName={setSearchName} />
-      <br />
-      <br />
+      </div>
+    <div className="search-results">
       {filterItems.map((item) => {
         return (
           <div style={displayContainer} key={item.id}>
@@ -78,7 +80,8 @@ function Search(props) {
           </div>
         );
       })}
-    </div>
+      </div>
+      </>
   )
 }
 

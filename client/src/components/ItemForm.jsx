@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import Switch from 'rc-switch'
-import 'rc-switch/assets/index.css'
+import Switch from 'rc-switch'      // rc-switch is not in package.json!!!
+// import 'rc-switch/assets/index.css'
+import './Toggle.css'
+import './ItemForm.css'
 
 function ItemForm(props) {
   const [pantry, setPantry] = useState(false)
@@ -14,8 +16,6 @@ function ItemForm(props) {
     setPantry(false)
     setFridge(prevFridge => !prevFridge)
     setFreezer(prevFreezer => !prevFreezer)
-
-
   }
 
   const handleFridgeSwitch = (e) => {
@@ -24,7 +24,6 @@ function ItemForm(props) {
     setFridge(false)
     setPantry(prevPantry => !prevPantry)
     setFreezer(prevFreezer => !prevFreezer)
-
   }
 
   const handleFreezerSwitch = (e) => {
@@ -33,7 +32,6 @@ function ItemForm(props) {
     setFreezer(false)
     setPantry(prevPantry => !prevPantry)
     setFridge(prevFridge => !prevFridge)
-
   }
 
   const handleAdd = (e) => {
@@ -41,52 +39,44 @@ function ItemForm(props) {
 
   }
 
-  const checkIfDisabled = () => {
-
-    return false;
-  }
 
   return (
-    <form onSubmit={handleAdd}>
+    <form className="form-layout" onSubmit={handleAdd}>
+      <p className="form-banner">Add an Item to Your List</p>
       <input
+        className="qty-input"
         type="number"
         value={props.quantity}
         onChange={(e) => props.setQuantity(e.target.valueAsNumber)}
         placeholder="Qty"
       />
-      <br />
       <input
+        className="uofm-input"
         type="text"
         value={props.uofm}
         onChange={(e) => props.setUofM(e.target.value)}
         placeholder="UofM"
       />
-      <br />
       <input
+        className="food-input"
         type="text"
         value={props.name}
         onChange={(e) => props.setName(e.target.value)}
         placeholder="Food Name"
       />
       <br />
-      {/* <input
-        type="text"
-        value={props.location}
-        onChange={(e) => props.setLocation(e.target.value)}
-        placeholder="Location"
-      /> */}
-
-      <div>
-        <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />pantry
+      <div className="location-toggle">
+        <div className="pantry-switch">
+          <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />pantry
+        </div>
+        <div classname="fridge-switch">
+          <Switch disabled={fridge} onChange={(fridge) => { setFridge(fridge) }} onClick={(e) => handleFridgeSwitch(e)} />fridge
+        </div>
+        <div className="freezer-switch">
+          <Switch disabled={freezer} onChange={(freezer) => { setFreezer(freezer) }} onClick={(e) => handleFreezerSwitch(e)} />freezer
+        </div>
       </div>
-      <div>
-        <Switch disabled={fridge} onChange={(fridge) => { setFridge(fridge) }} onClick={(e) => handleFridgeSwitch(e)} />fridge
-      </div>
-      <div>
-        <Switch disabled={freezer} onChange={(freezer) => { setFreezer(freezer) }} onClick={(e) => handleFreezerSwitch(e)} />freezer
-      </div>
-
-      <button disabled={checkIfDisabled()}>Add</button>
+      <button className="create-item">Add</button>
     </form>
   )
 }

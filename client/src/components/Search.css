@@ -1,0 +1,10 @@
+.search-bar {
+  height: 10vh;
+  padding-top: 50px;
+  border: 1px solid black;
+}
+.search-results {
+  height: 75vh;
+  border: 1px solid black;
+
+}

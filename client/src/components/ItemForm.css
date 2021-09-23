@@ -1,0 +1,45 @@
+.form-layout {
+  
+  background-color: lightgray;
+}
+
+.form-banner {
+  
+  align-self: center;
+  border: 1px solid black;
+  width: 50%;
+  margin: 0;
+}
+
+.qty-input {
+  
+
+  width: 35px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.uofm-input {
+  
+  width: 35px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.food-input {
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.create-item {
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+
+}

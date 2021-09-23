@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useHistory } from 'react-router';
 import { addItem } from '../services/API';
 import ItemForm from './ItemForm';
-
+import './NewItem.css'
 
 function NewItem(props) {
   // const [name, setName] = useState('');
@@ -23,7 +23,7 @@ function NewItem(props) {
     }
 
     await addItem(fields);
-    
+
     history.push(`/pantry`);
     setName('')
     setQuantity('')
@@ -32,16 +32,16 @@ function NewItem(props) {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <ItemForm
         handleSubmit={handleSubmit}
         name={name} setName={setName}
         quantity={quantity} setQuantity={setQuantity}
         uofm={uofm} setUofM={setUofM}
         location={location} setLocation={setLocation}
-        
       />
     </div>
+
   )
 }
 

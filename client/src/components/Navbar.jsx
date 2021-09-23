@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
+import './Navbar.css'
 
-const navStyle = {
-  display: "flex",
-  justifyContent: "space-around",
-  // alignItems: "flex-end"
-  paddingTop: "3%"
-}
+// const navStyle = {
+//   display: "flex",
+//   justifyContent: "space-around",
+//   flexDirection: "flex-end",
+//   // alignItems: "flex-end"
+//   paddingTop: "3%"
+// }
 
 function Navbar() {
   return (
     <>
-      <div style={navStyle}>
+      <div className="Navbar">
         <Link to="/">
           <span>|Home|</span>
         </Link>

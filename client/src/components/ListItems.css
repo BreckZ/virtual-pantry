@@ -1,0 +1,18 @@
+.listitems-container {
+  height: 70vh;
+}
+
+.decrement {
+  color: black;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 50px;
+}
+
+.increment {
+  color: black;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 50px;
+}
+
