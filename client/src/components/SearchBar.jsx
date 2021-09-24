@@ -3,6 +3,7 @@ function SearchBar(props) {
     <>
       <input
         type="search"
+        placeholder="search"
         value={props.searchName}
         onChange={(e) => props.setSearchName(e.target.value)}
       />
