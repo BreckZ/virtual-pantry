@@ -1,7 +1,10 @@
 .form-container {
   height: 30vh;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+  padding: 5px;
   background-color: rgb(245, 244, 244);
 }
 
@@ -17,5 +20,44 @@
   border-radius: 25px;
   margin-top: 10px;
   box-shadow: 3px 3px 3px 3px rgb(185, 183, 183);
+}
+
+.form-banner {
+  height: 35px;
+  background-color: rgb(245, 244, 244);
+  margin: 0;
+  padding-top: 10px;
+}
+
+.form-input {
+  border-radius: 15px;
+}
+
+.qty-input {
+  height: 25px;
+  width: 55px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.uofm-input {
+  height: 25px;
+  width: 55px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.food-input {
+  height: 25px;
+  width: 175px;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.add-button {
+  height: 35px;
+  width: 285px;
+  border-radius: 15px;
 }
 

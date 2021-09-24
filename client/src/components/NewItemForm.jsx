@@ -36,24 +36,24 @@ function NewItemForm(props) {
   return (
     <>
       <div className="new-item-form-container">
-        <p className="form-banner">Add an Item to Your List</p>
-        <form onSubmit={handleAdd}>
+        <h3 className="form-banner">Add an Item to Your List</h3>
+        <form className="form-container" onSubmit={handleAdd}>
           <input
-            className="qty-input"
+            className="qty-input form-input"
             type="number"
             value={props.quantity}
             onChange={(e) => props.setQuantity(e.target.valueAsNumber)}
             placeholder="Qty"
           />
           <input
-            className="uofm-input"
+            className="uofm-input form-input"
             type="text"
             value={props.uofm}
             onChange={(e) => props.setUofM(e.target.value)}
             placeholder="UofM"
           />
           <input
-            className="food-input"
+            className="food-input form-input"
             type="text"
             value={props.name}
             onChange={(e) => props.setName(e.target.value)}
@@ -91,7 +91,7 @@ function NewItemForm(props) {
             <span>freezer</span>
           </div>
 
-          <button className="create-item">Add</button>
+          <button className="add-button">Add</button>
         </form>
       </div>
     </>
