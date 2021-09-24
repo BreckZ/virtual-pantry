@@ -1,6 +1,8 @@
 .form-container {
+  height: 30vh;
   display: flex;
   justify-content: center;
+  background-color: rgb(245, 244, 244);
 }
 
 .new-item-form-container {
@@ -9,10 +11,11 @@
   align-self: center;
   justify-content: space-between;
   width: 95%;
-  height: 27vh;
-  border: 3px solid red;
-  background-color: cornflowerblue;
+  height: 25vh;
+  border: 1px solid black;
+  background-color: white;
   border-radius: 25px;
   margin-top: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(185, 183, 183);
 }
 

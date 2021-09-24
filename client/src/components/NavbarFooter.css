@@ -2,14 +2,28 @@
   height: 4vh;
   display: flex;
   justify-content: space-around;
-  background-color: lightgray;
+  background-color: black;
   padding: 5% 0 5% 0;
   width: 100%;
   position: fixed;
   bottom: 0;
-  border: 1px solid black;
+  
 }
 
+.home-icon {
+color: white;
+font-size: 30px;
+}
+
+.search-icon {
+color: white;
+font-size: 30px;
+}
+
+.pantry-icon {
+  color: white;
+  font-size: 30px;
+}
 
 @media screen and (min-width: 600px) {
   
