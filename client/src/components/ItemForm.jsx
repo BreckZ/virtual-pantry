@@ -66,13 +66,16 @@ function ItemForm(props) {
         <div className="form-buttons">
           <div className="location-toggle">
             <div className="pantry-switch">
-              <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />pantry
+              <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />
+              <span>pantry</span>
             </div>
             <div className="fridge-switch">
-              <Switch disabled={fridge} onChange={(fridge) => { setFridge(fridge) }} onClick={(e) => handleFridgeSwitch(e)} />fridge
+              <Switch disabled={fridge} onChange={(fridge) => { setFridge(fridge) }} onClick={(e) => handleFridgeSwitch(e)} />
+              <span>fridge</span>
             </div>
             <div className="freezer-switch">
-              <Switch disabled={freezer} onChange={(freezer) => { setFreezer(freezer) }} onClick={(e) => handleFreezerSwitch(e)} />freezer
+              <Switch disabled={freezer} onChange={(freezer) => { setFreezer(freezer) }} onClick={(e) => handleFreezerSwitch(e)} />
+              <span>freezer</span>
             </div>
           </div>
           <button className="create-item">Add</button>

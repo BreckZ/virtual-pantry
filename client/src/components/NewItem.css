@@ -42,12 +42,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Form 'add' button */
 .create-item {
-  align-items: center;
   width: 100px;
+  height: 50px;
   margin: 15%;
 }
 
