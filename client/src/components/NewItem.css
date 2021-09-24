@@ -1,6 +1,6 @@
 .form-layout .form-container {
   width: 100%;
-  height: 42vh;
+  height: 30vh;
   border: 3px solid red;
   background-color: cornflowerblue;
 }
@@ -13,6 +13,7 @@
   
 }
 
+/* Form inputs */
 .qty-input {
   width: 35px;
   text-align: center;
@@ -36,20 +37,22 @@
 
 }
 
+/* Form toggles and button container */
 .form-buttons {
   display: flex;
   flex-direction: row;
 
 }
 
+/* Form add button */
 .create-item {
-  width: 200px;
-  text-align: center;
+  align-items: center;
+  width: 100px;
   padding: 5px;
   margin: 5px;
-
 }
 
+/* Form toggle switches */
 .location-toggle {
   text-align: left;
   padding-left: 10%;
