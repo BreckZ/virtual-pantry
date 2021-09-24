@@ -74,6 +74,7 @@ function Home(props) {
 
   return (
     <>
+      <div className="homepage-banner"></div>
       <div className="filter-bar">
         <button onClick={(e) => { handleAllClick() }}>all</button>
         <button onClick={(e) => { handlePantryClick() }}>pantry</button>

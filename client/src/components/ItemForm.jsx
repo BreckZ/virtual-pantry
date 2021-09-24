@@ -33,7 +33,7 @@ function ItemForm(props) {
 
   const handleAdd = (e) => {
     props.handleSubmit(e)
-
+    
   }
 
 
@@ -66,7 +66,7 @@ function ItemForm(props) {
         <div className="form-buttons">
           <div className="location-toggle">
             <div className="pantry-switch">
-              <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)} />
+              <Switch disabled={pantry} onChange={(pantry) => { setPantry(pantry) }} onClick={(e) => handlePantrySwitch(e)}/>
               <span>pantry</span>
             </div>
             <div className="fridge-switch">

@@ -31,7 +31,7 @@
 
 .food-input {
   width: 200px;
-  text-align: center;
+  text-align: left;
   padding: 5px;
   margin: 5px;
 
@@ -54,6 +54,5 @@
 
 /* Form toggle switches */
 .location-toggle {
-  text-align: left;
   padding-left: 10%;
 }
