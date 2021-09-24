@@ -5,7 +5,7 @@
 
 .search-bar-container {
   display: flex;
-  height: 5vh;
+  height: 10vh;
   width: 100%;
   justify-content: center;
   align-items: center;

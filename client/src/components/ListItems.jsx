@@ -47,24 +47,26 @@ function ListItems(props) {
   }
 
   return (
-    <div>
+    <>
       <div className="listitems-banner"></div>
-      {itemNames.map((item) => {
-        return (
-          <div className="form-inputs" key={item.id}>
-            <button className="decrement" onClick={() => { handleDecrement(item) }}>-</button>
-            {/* <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" /> */}
-            <span className="quantity-display"> {item.fields.quantity} </span>
-            <button className="increment" onClick={() => { handleIncrement(item) }}>+</button>
-            {/* <FontAwesomeIcon onClick={() => { handleIncrement(item) }} className="increment" icon={faPlus} size="sm" /> */}
-            <span className="uofm-display"> {item.fields.uofm} </span>
-            <span className="food-name"> {item.fields.name} </span>
-            <span className="location-display"> {item.fields.location} </span>
-            <button onClick={() => handleDelete(item.id)}>x</button>
-          </div>
-        );
-      })}
-    </div>
+      <div className="listitems-container">
+        {itemNames.map((item) => {
+          return (
+            <div className="form-inputs" key={item.id}>
+              <button className="decrement" onClick={() => { handleDecrement(item) }}>-</button>
+              {/* <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" /> */}
+              <span className="quantity-display"> {item.fields.quantity} </span>
+              <button className="increment" onClick={() => { handleIncrement(item) }}>+</button>
+              {/* <FontAwesomeIcon onClick={() => { handleIncrement(item) }} className="increment" icon={faPlus} size="sm" /> */}
+              <span className="uofm-display"> {item.fields.uofm} </span>
+              <span className="food-name"> {item.fields.name} </span>
+              <span className="location-display"> {item.fields.location} </span>
+              <button onClick={() => handleDelete(item.id)}>x</button>
+            </div>
+          );
+        })}
+      </div>
+    </>
   )
 }
 

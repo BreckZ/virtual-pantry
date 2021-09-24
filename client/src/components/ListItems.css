@@ -5,27 +5,23 @@
 }
 
 .listitems-container {
-  height: 10vh;
+  /* display: flex; */
+  max-height: 40vh;
   width: 100%;
-  border: 3px solid green;
   overflow: scroll;
+  /* justify-content: space-evenly; */
 }
 .form-inputs{
   display: flex;
+  justify-content: space-around;
 }
 
 .decrement {
-  color: black;
-  border: 2px solid black;
-  padding: 5px 5px 5px 5px;
-  border-radius: 1000px;
+ 
 }
 
 .increment {
-  color: black;
-  border: 2px solid black;
-  padding: 3px;
-  border-radius: 1000px;
+  
 }
 
 
