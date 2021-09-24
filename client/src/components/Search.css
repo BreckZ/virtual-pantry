@@ -6,5 +6,6 @@
 .search-results {
   height: 75vh;
   border: 1px solid black;
+  overflow: scroll;
 }
 
