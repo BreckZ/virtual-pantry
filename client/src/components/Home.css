@@ -9,7 +9,7 @@
   padding-top: 25px;
 }
 .filter-results {
-  height: 63vh;
+  height: 60vh;
   border: 1px solid black;
   overflow: scroll;
 }

@@ -52,7 +52,7 @@ function ListItems(props) {
       <div className="listitems-container">
         {itemNames.map((item) => {
           return (
-            <div className="form-inputs" key={item.id}>
+            <div className="listitems-display" key={item.id}>
               <button className="decrement" onClick={() => { handleDecrement(item) }}>-</button>
               {/* <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" /> */}
               <span className="quantity-display"> {item.fields.quantity} </span>

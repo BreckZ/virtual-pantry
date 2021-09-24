@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router';
 import { addItem } from '../services/API';
-import ItemForm from './ItemForm';
-import './NewItem.css'
+import NewItemForm from './NewItemForm';
+import './NewItemForm.css'
 
 function NewItem(props) {
   // const [name, setName] = useState('');
@@ -32,8 +32,8 @@ function NewItem(props) {
   };
 
   return (
-    <div className="form-container">
-      <ItemForm
+    <div>
+      <NewItemForm
         handleSubmit={handleSubmit}
         name={name} setName={setName}
         quantity={quantity} setQuantity={setQuantity}
