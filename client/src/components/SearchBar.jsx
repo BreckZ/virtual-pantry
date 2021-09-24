@@ -6,7 +6,6 @@ function SearchBar(props) {
         value={props.searchName}
         onChange={(e) => props.setSearchName(e.target.value)}
       />
-      <button>search</button>
     </>
   )
 }

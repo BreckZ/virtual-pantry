@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getItems, changeQuantity, deleteItem } from '../services/API';
+import './Home.css'
 
 function Home(props) {
   const [location, setLocation] = useState('');
@@ -68,31 +69,33 @@ function Home(props) {
 
   const handleDelete = async (id) => {
     await deleteItem(id);
-    setToggleFetch((prevState)=>!prevState);
+    setToggleFetch((prevState) => !prevState);
   }
 
   return (
     <>
-      <button onClick={(e) => {handleAllClick()}}>all</button>
-      <button onClick={(e) => {handlePantryClick()}}>pantry</button>
-      <button onClick={(e) => {handleFridgeClick() }}>fridge</button>
-      <button onClick={(e) => {handleFreezerClick()}}>freezer</button>
-    <div className="filter-results">
-      {filterItems.map((item) => {
-        return (
-          <div key={item.id}>
-            <button onClick={() => { handleDecrement(item) }}>-</button>
-            <span> {item.fields.quantity} </span>
-            <button onClick={() => { handleIncrement(item) }}>+</button>
-            <span> {item.fields.uofm} </span>
-            <span> {item.fields.name} </span>
-            <span> {item.fields.location} </span>
-            <button onClick={() => handleDelete(item.id)}>delete</button>
-          </div>
-        );
-      })}
+      <div className="filter-bar">
+        <button onClick={(e) => { handleAllClick() }}>all</button>
+        <button onClick={(e) => { handlePantryClick() }}>pantry</button>
+        <button onClick={(e) => { handleFridgeClick() }}>fridge</button>
+        <button onClick={(e) => { handleFreezerClick() }}>freezer</button>
       </div>
-      </>
+      <div className="filter-results">
+        {filterItems.map((item) => {
+          return (
+            <div key={item.id}>
+              <button onClick={() => { handleDecrement(item) }}>-</button>
+              <span> {item.fields.quantity} </span>
+              <button onClick={() => { handleIncrement(item) }}>+</button>
+              <span> {item.fields.uofm} </span>
+              <span> {item.fields.name} </span>
+              <span> {item.fields.location} </span>
+              <button onClick={() => handleDelete(item.id)}>delete</button>
+            </div>
+          );
+        })}
+      </div>
+    </>
   )
 }
 
