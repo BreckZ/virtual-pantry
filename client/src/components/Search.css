@@ -4,9 +4,11 @@
 }
 
 .search-bar-container {
+  display: flex;
   height: 5vh;
   width: 100%;
-  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-bar-input {

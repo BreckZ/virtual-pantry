@@ -60,7 +60,9 @@ function Search(props) {
   return (
     <>
       <div className="search-bar-banner"></div>
-      <SearchBar searchName={searchName} setSearchName={setSearchName} />
+      <div className="search-bar'container">
+        <SearchBar searchName={searchName} setSearchName={setSearchName} />
+      </div>
       <div className="search-results">
         {filterItems.map((item) => {
           return (
