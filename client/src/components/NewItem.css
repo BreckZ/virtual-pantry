@@ -41,15 +41,14 @@
 .form-buttons {
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
 }
 
-/* Form add button */
+/* Form 'add' button */
 .create-item {
   align-items: center;
   width: 100px;
-  padding: 5px;
-  margin: 5px;
+  margin: 15%;
 }
 
 /* Form toggle switches */
