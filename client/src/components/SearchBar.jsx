@@ -2,12 +2,11 @@ function SearchBar(props) {
   return (
     <>
       <input
-        type="text"
+        type="search"
         value={props.searchName}
         onChange={(e) => props.setSearchName(e.target.value)}
       />
       <button>search</button>
-
     </>
   )
 }

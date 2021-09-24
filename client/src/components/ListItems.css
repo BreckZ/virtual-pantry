@@ -1,18 +1,24 @@
 .listitems-container {
-  height: 70vh;
+  height: 43vh;
+  width: 100%;
+  border: 3px solid green;
+}
+.form-inputs{
+  display: flex;
 }
 
 .decrement {
   color: black;
   border: 2px solid black;
-  padding: 3px;
-  border-radius: 50px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 1000px;
 }
 
 .increment {
   color: black;
   border: 2px solid black;
   padding: 3px;
-  border-radius: 50px;
+  border-radius: 1000px;
 }
+
 

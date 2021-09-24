@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { getItems, changeQuantity, deleteItem } from '../services/API';
-import SearchBar from './SearchBar';
-import './Search.css'
 
-function Search(props) {
-  const [searchName, setSearchName] = useState('');
+function Home(props) {
+  const [location, setLocation] = useState('');
   const [items, setItems] = useState([]);
   const [filterItems, setFilterItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -20,13 +18,29 @@ function Search(props) {
   }, [toggleFetch], props.name)
 
   useEffect(() => {
-    const filter = items.filter((item) => item.fields.name?.includes(searchName));
-    if (searchName.length === 0) {
+    const filter = items.filter((item) => item.fields.location?.includes(location));
+    if (location.length === 0) {
       setFilterItems([])
     } else {
       setFilterItems(filter);
     }
-  }, [searchName, items])
+  }, [location, items])
+
+  const handleAllClick = () => {
+    setLocation(location)
+  }
+
+  const handlePantryClick = () => {
+    setLocation('pantry')
+  }
+
+  const handleFridgeClick = () => {
+    setLocation('fridge')
+  }
+
+  const handleFreezerClick = () => {
+    setLocation('freezer')
+  }
 
   if (loading) return <div></div>;
 
@@ -59,10 +73,11 @@ function Search(props) {
 
   return (
     <>
-      <div className="search-bar">
-      <SearchBar searchName={searchName} setSearchName={setSearchName} />
-      </div>
-    <div className="search-results">
+      <button onClick={(e) => {handleAllClick()}}>all</button>
+      <button onClick={(e) => {handlePantryClick()}}>pantry</button>
+      <button onClick={(e) => {handleFridgeClick() }}>fridge</button>
+      <button onClick={(e) => {handleFreezerClick()}}>freezer</button>
+    <div className="filter-results">
       {filterItems.map((item) => {
         return (
           <div key={item.id}>
@@ -81,4 +96,4 @@ function Search(props) {
   )
 }
 
-export default Search;
+export default Home;

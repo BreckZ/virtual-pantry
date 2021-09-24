@@ -16,6 +16,11 @@ export const getItems = async () => {
   return res.data.records;
 }
 
+export const getLocation = async () => {
+  const res = await axios.get(URL, config);
+  return res.data.records;
+}
+
 export const addItem = async (fields) => {
   const res = await axios.post(URL, { fields }, config);
   return res.data;

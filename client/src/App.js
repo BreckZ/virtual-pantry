@@ -5,10 +5,11 @@ import { useState } from 'react';
 
 //Internal Imports (i.e.)
 import Navbar from './components/Navbar';
-import NavbarFooter from './components/NavbarFooter';
+import Home from './components/Home';
+import Search from './components/Search';
 import ListItems from './components/ListItems';
 import NewItem from './components/NewItem';
-import Search from './components/Search';
+import NavbarFooter from './components/NavbarFooter';
 import './App.css';
 
 
@@ -17,7 +18,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route path="/">
+      <Route exact path="/">
+        <Home/>
       </Route>
 
       <Route path="/search">

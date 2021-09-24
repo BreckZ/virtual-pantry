@@ -1,6 +1,56 @@
-.form-container {
-  
-  height: 20vh;
-  border: 1px solid black;
+.form-layout .form-container {
+  width: 100%;
+  height: 42vh;
+  border: 3px solid red;
   background-color: cornflowerblue;
+}
+
+.form-banner {
+  border: 1px solid black;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 25%;
+  
+}
+
+.qty-input {
+  width: 35px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.uofm-input {
+  
+  width: 35px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.food-input {
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.create-item {
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.location-toggle {
+  text-align: left;
+  padding-left: 10%;
 }

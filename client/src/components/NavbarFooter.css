@@ -1,10 +1,13 @@
 .NavbarFooter {
-  grid-row-start: 1;
+  height: 4vh;
   display: flex;
   justify-content: space-around;
   background-color: lightgray;
-  padding:5% 4% 5% 4%;
+  padding: 5% 0 5% 0;
+  width: 100%;
+  position: fixed;
   bottom: 0;
+  border: 1px solid black;
 }
 
 
