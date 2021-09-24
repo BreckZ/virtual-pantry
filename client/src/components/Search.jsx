@@ -54,30 +54,29 @@ function Search(props) {
 
   const handleDelete = async (id) => {
     await deleteItem(id);
-    setToggleFetch((prevState)=>!prevState);
+    setToggleFetch((prevState) => !prevState);
   }
 
   return (
     <>
-      <div className="search-bar">
+      <div className="search-bar-banner"></div>
       <SearchBar searchName={searchName} setSearchName={setSearchName} />
+      <div className="search-results">
+        {filterItems.map((item) => {
+          return (
+            <div key={item.id}>
+              <button onClick={() => { handleDecrement(item) }}>-</button>
+              <span> {item.fields.quantity} </span>
+              <button onClick={() => { handleIncrement(item) }}>+</button>
+              <span> {item.fields.uofm} </span>
+              <span> {item.fields.name} </span>
+              <span> {item.fields.location} </span>
+              <button onClick={() => handleDelete(item.id)}>delete</button>
+            </div>
+          );
+        })}
       </div>
-    <div className="search-results">
-      {filterItems.map((item) => {
-        return (
-          <div key={item.id}>
-            <button onClick={() => { handleDecrement(item) }}>-</button>
-            <span> {item.fields.quantity} </span>
-            <button onClick={() => { handleIncrement(item) }}>+</button>
-            <span> {item.fields.uofm} </span>
-            <span> {item.fields.name} </span>
-            <span> {item.fields.location} </span>
-            <button onClick={() => handleDelete(item.id)}>delete</button>
-          </div>
-        );
-      })}
-      </div>
-      </>
+    </>
   )
 }
 

@@ -47,10 +47,8 @@ function ListItems(props) {
   }
 
   return (
-    <div className="listitems-container">
-      <button >Pantry</button>
-      <button>Fridge</button>
-      <button>Freezer</button>
+    <div>
+      <div className="listitems-banner"></div>
       {itemNames.map((item) => {
         return (
           <div className="form-inputs" key={item.id}>

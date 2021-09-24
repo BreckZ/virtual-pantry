@@ -1,5 +1,11 @@
+.listitems-banner {
+  height: 20vh;
+  background-image: url(https://i.imgur.com/WgNZKo7.jpg);
+  top: 0;
+}
+
 .listitems-container {
-  height: 60vh;
+  height: 10vh;
   width: 100%;
   border: 3px solid green;
   overflow: scroll;
