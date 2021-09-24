@@ -27,10 +27,6 @@ function Home(props) {
     }
   }, [location, items])
 
-  const handleAllClick = () => {
-    setLocation(location)
-  }
-
   const handlePantryClick = () => {
     setLocation('pantry')
   }
@@ -74,12 +70,13 @@ function Home(props) {
 
   return (
     <>
-      <div className="homepage-banner"></div>
+      <div className="homepage-banner">
+        <span className="homepage-title">Pantry Pal</span>
+      </div>
       <div className="filter-bar">
-        <button onClick={(e) => { handleAllClick() }}>all</button>
-        <button onClick={(e) => { handlePantryClick() }}>pantry</button>
-        <button onClick={(e) => { handleFridgeClick() }}>fridge</button>
-        <button onClick={(e) => { handleFreezerClick() }}>freezer</button>
+        <button className="filter-button" onClick={(e) => { handlePantryClick() }}>pantry</button>
+        <button className="filter-button" onClick={(e) => { handleFridgeClick() }}>fridge</button>
+        <button className="filter-button" onClick={(e) => { handleFreezerClick() }}>freezer</button>
       </div>
       <div className="filter-results">
         {filterItems.map((item) => {

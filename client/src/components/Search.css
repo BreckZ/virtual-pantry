@@ -1,6 +1,22 @@
 .search-bar-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 20vh;
-  background-image: url('https://i.imgur.com/O7DgO3H.jpg');
+  background-image: url('https://i.imgur.com/Ab3fiOP.jpg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.search-bar-title {
+  text-align: Center;
+  font-size: 40px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
+.white-title {
+  color: white;
 }
 
 .search-bar-container {

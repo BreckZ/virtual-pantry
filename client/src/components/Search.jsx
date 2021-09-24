@@ -59,7 +59,9 @@ function Search(props) {
 
   return (
     <>
-      <div className="search-bar-banner"></div>
+      <div className="search-bar-banner">
+        <span className="search-bar-title">Pantr<span className="white-title">y Pal</span></span>
+      </div>
       <div className="search-bar'container">
         <SearchBar searchName={searchName} setSearchName={setSearchName} />
       </div>

@@ -48,7 +48,9 @@ function ListItems(props) {
 
   return (
     <>
-      <div className="listitems-banner"></div>
+      <div className="listitems-banner">
+        <span className="listitems-title"><span className="white-title">Pant</span>ry Pal</span>
+      </div>
       <div className="listitems-container">
         {itemNames.map((item) => {
           return (
