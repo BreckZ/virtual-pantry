@@ -21,9 +21,10 @@
 }
 
 .listitems-container {
-  max-height: 35vh;
+  max-height: 31vh;
   width: 100%;
   overflow: scroll;
+  border: 1px solid black;
 }
 
 .listitems-display {

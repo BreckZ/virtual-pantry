@@ -32,7 +32,7 @@ function NewItem(props) {
   };
 
   return (
-    <div className="form-container">
+    // <div className="form-container">
       <NewItemForm
         handleSubmit={handleSubmit}
         name={name} setName={setName}
@@ -40,7 +40,7 @@ function NewItem(props) {
         uofm={uofm} setUofM={setUofM}
         location={location} setLocation={setLocation}
       />
-    </div>
+    // </div>
 
   )
 }
