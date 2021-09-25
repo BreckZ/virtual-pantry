@@ -10,6 +10,7 @@
   background-size: cover;
   transform: rotate(180deg);
   margin-bottom: 10px;
+  
 }
 
 .listitems-title {
@@ -21,7 +22,7 @@
 }
 
 .listitems-container {
-  max-height: 31vh;
+  max-height: 36vh;
   width: 100%;
   overflow: scroll;
   border: 1px solid black;

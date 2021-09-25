@@ -39,6 +39,7 @@ function NewItemForm(props) {
         <div className="new-item-form-container">
           <form onSubmit={handleAdd}>
             <h3 className="form-banner">Add an Item to Your List</h3>
+            <div className="form-input-container">
             <input
               className="qty-input form-input"
               type="number"
@@ -62,36 +63,39 @@ function NewItemForm(props) {
               onChange={(e) => props.setName(e.target.value)}
               placeholder="Food Name"
             />
-            <div className="pantry-switch">
-              <Switch
-                {...(pantry ? "checked" : null)}
-                disabled={pantry}
-                onChange={(pantry) => {
-                  setPantry(pantry);
-                }}
-                onClick={(e) => handlePantrySwitch(e)}
-              />
-              <span>pantry</span>
             </div>
-            <div className="fridge-switch">
-              <Switch
-                disabled={fridge}
-                onChange={(fridge) => {
-                  setFridge(fridge);
-                }}
-                onClick={(e) => handleFridgeSwitch(e)}
-              />
-              <span>fridge</span>
-            </div>
-            <div className="freezer-switch">
-              <Switch
-                disabled={freezer}
-                onChange={(freezer) => {
-                  setFreezer(freezer);
-                }}
-                onClick={(e) => handleFreezerSwitch(e)}
-              />
-              <span>freezer</span>
+            <div className="form-switch-container">
+              <div className="pantry-switch">
+                <Switch
+                  {...(pantry ? "checked" : null)}
+                  disabled={pantry}
+                  onChange={(pantry) => {
+                    setPantry(pantry);
+                  }}
+                  onClick={(e) => handlePantrySwitch(e)}
+                />
+                <span>pantry</span>
+              </div>
+              <div className="fridge-switch">
+                <Switch
+                  disabled={fridge}
+                  onChange={(fridge) => {
+                    setFridge(fridge);
+                  }}
+                  onClick={(e) => handleFridgeSwitch(e)}
+                />
+                <span>fridge</span>
+              </div>
+              <div className="freezer-switch">
+                <Switch
+                  disabled={freezer}
+                  onChange={(freezer) => {
+                    setFreezer(freezer);
+                  }}
+                  onClick={(e) => handleFreezerSwitch(e)}
+                />
+                <span>freezer</span>
+              </div>
             </div>
             <button className="add-button">Add</button>
           </form>
