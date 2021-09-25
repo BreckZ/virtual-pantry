@@ -1,4 +1,5 @@
 
+/* background of form */
 .new-item-form-container {
   position: absolute;
   bottom: 11%;
@@ -11,7 +12,7 @@
   background-color: rgb(245, 244, 244);
   border-radius: 25px;
   margin-top: 10px;
-  box-shadow: 3px 3px 3px 3px rgb(185, 183, 183);
+  box-shadow: 3px 3px 3px 3px  rgb(185, 183, 183);
 }
 
 .form-container {
@@ -22,6 +23,7 @@
   justify-content:space-around ;
   padding: 5px;
   background-color: white;
+  border-radius: 25px;
 }
 
 .form-banner {
@@ -61,6 +63,7 @@
 .add-button {
   height: 35px;
   width: 285px;
+  font-size: 18px;
   border-radius: 15px;
 }
 
