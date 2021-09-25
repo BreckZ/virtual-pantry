@@ -35,6 +35,7 @@
   border-radius: 15px;
   padding-left: 4%;
   font-family: 'Libre Baskerville', serif;
+  text-transform: none;
 }
 
 .search-results {

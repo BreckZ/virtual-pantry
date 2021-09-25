@@ -25,15 +25,25 @@
 
 .filter-button {
   height: 45px;
-  width: 85px;
-  font-size: 20px;
+  width: 90px;
+  font-size: 18px;
   text-align: center;
   border-radius: 15px;
   font-family: 'Libre Baskerville', serif;
+  background-color: white;
+  border-radius: 2px solid black;
+}
+
+.filter-results-container {
+  display: flex;
+  justify-content: center;
 }
 
 .filter-results {
-  height: 60vh;
+  height: 53vh;
+  width: 90%;
+  align-self: center;
   border: 1px solid black;
   overflow: scroll;
 }
+
