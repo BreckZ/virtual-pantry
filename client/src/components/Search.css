@@ -40,6 +40,8 @@
 
 .search-results {
   height: 52vh;
+  width: 90%;
+  align-self: cente;
   border: 1px solid black;
   overflow: scroll;
 }

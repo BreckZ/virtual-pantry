@@ -2,7 +2,7 @@
 /* background of form */
 .new-item-form-container {
   position: absolute;
-  bottom: 11%;
+  bottom: 13%;
   display: flex;
   flex-direction: column;
   align-self: center;
