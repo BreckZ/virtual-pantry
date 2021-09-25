@@ -55,15 +55,15 @@ function ListItems(props) {
         {itemNames.map((item) => {
           return (
             <div className="listitems-display" key={item.id}>
-              <button className="decrement" onClick={() => { handleDecrement(item) }}>-</button>
+              <button className="decrement display-button" onClick={() => { handleDecrement(item) }}>-</button>
               {/* <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" /> */}
               <span className="quantity-display"> {item.fields.quantity} </span>
-              <button className="increment" onClick={() => { handleIncrement(item) }}>+</button>
+              <button className="increment display-button" onClick={() => { handleIncrement(item) }}>+</button>
               {/* <FontAwesomeIcon onClick={() => { handleIncrement(item) }} className="increment" icon={faPlus} size="sm" /> */}
               <span className="uofm-display"> {item.fields.uofm} </span>
               <span className="food-name"> {item.fields.name} </span>
               <span className="location-display"> {item.fields.location} </span>
-              <button onClick={() => handleDelete(item.id)}>x</button>
+              <button className="delete-button display-button" onClick={() => handleDelete(item.id)}>x</button>
             </div>
           );
         })}

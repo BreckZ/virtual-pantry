@@ -33,16 +33,27 @@
   width: 80%;
   margin: 0;
   border-radius: 15px;
-  padding-left: 4%;
+  padding-left: 15px;
   font-family: 'Libre Baskerville', serif;
   text-transform: none;
 }
 
+.search-bar-input:focus {
+  outline: none;
+}
+
+.search-results-container {
+  display: flex;
+  justify-content: center;
+}
+
 .search-results {
-  height: 52vh;
+  height: 53vh;
   width: 90%;
   align-self: cente;
   border: 1px solid black;
   overflow: scroll;
 }
+
+
 

@@ -97,7 +97,9 @@ function NewItemForm(props) {
                 <span>freezer</span>
               </div>
             </div>
+            <div className="add-button-container">
             <button className="add-button">Add</button>
+            </div>
           </form>
         </div>
       </div>
