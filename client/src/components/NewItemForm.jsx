@@ -36,8 +36,8 @@ function NewItemForm(props) {
   return (
     <>
       <div className="new-item-form-container">
-        <h3 className="form-banner">Add an Item to Your List</h3>
         <form className="form-container" onSubmit={handleAdd}>
+          <h3 className="form-banner">Add an Item to Your List</h3>
           <input
             className="qty-input form-input"
             type="number"
