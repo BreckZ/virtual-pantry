@@ -45,21 +45,61 @@
 
 /* ListItem elements */
 .display-button {
-  background-color: white;
-  font-weight: 400;
-  color: gray;
-  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 2em;
   width: 2em;
-  border: 1px solid lightgray;
-  box-shadow: 0 1px 1px gray;
-  border-radius: 50px;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 1px 2px gray;
 }
 
 .display-button:active {
   transform: translateY(1px);
-  box-shadow: 0 0 1px white;
+  box-shadow: 0 0 2px white;
 }
+
+/* Decrement button */
+.horizontal-decrement {
+  height: .15em;
+  width: 1.7em;
+  background-color: gray;
+}
+
+/* Increment button */
+.horizontal-increment, .vertical-increment {
+  height: .15em;
+  width: 1em;
+  background-color: gray;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.vertical-increment {
+  transform: rotate(90deg);
+}
+
+/* Delete Button */
+.horizontal-delete, .vertical-delete {
+  height: .15em;
+  width: 1em;
+  background-color: gray;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.horizontal-delete {
+  transform: rotate(45deg);
+}
+
+.vertical-delete {
+  transform: rotate(-45deg);
+}
+
+
 .quantity-display {
   width: 15px;
   text-align: center;

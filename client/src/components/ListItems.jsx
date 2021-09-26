@@ -55,15 +55,22 @@ function ListItems(props) {
         {itemNames.map((item) => {
           return (
             <div className="listitems-display" key={item.id}>
-              <button className="decrement display-button" onClick={() => { handleDecrement(item) }}>&#8722;</button>
-              {/* <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" /> */}
+              <button className="display-button decrement" onClick={() => { handleDecrement(item) }}>
+                <div className="horizontal-decrement"></div>
+              </button>
               <span className="quantity-display"> {item.fields.quantity} </span>
-              <button className="increment display-button" onClick={() => { handleIncrement(item) }}>&#43;</button>
+              <button className="display-button increment" onClick={() => { handleIncrement(item) }}>
+                <div className="horizontal-increment"></div>
+                <div className="vertical-increment"></div>
+              </button>
               {/* <FontAwesomeIcon onClick={() => { handleIncrement(item) }} className="increment" icon={faPlus} size="sm" /> */}
               <span className="uofm-display"> {item.fields.uofm} </span>
               <span className="food-name"> {item.fields.name} </span>
               <span className="location-display"> {item.fields.location} </span>
-              <button className="delete-button display-button" onClick={() => handleDelete(item.id)}>x</button>
+              <button className="display-button delete" onClick={() => handleDelete(item.id)}>
+              <div className="horizontal-delete"></div>
+                <div className="vertical-delete"></div>
+              </button>
             </div>
           );
         })}
