@@ -40,6 +40,7 @@
   margin-top: 1vh;
   margin-bottom: 1vh;
   border: 1px solid green;
+  overflow: scroll;
 }
 
 /* ListItem elements */
