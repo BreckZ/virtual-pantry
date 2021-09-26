@@ -45,9 +45,9 @@
 
 /* ListItem elements */
 .display-button {
-  display: flex;
+  /* display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  */
   height: 2em;
   width: 2em;
   border: 1px solid lightgray;
@@ -65,36 +65,39 @@
 /* Decrement button */
 .horizontal-decrement {
   height: .15em;
-  width: 1.7em;
+  width: 100%;
   background-color: gray;
+  pointer-events: none;
 }
 
 /* Increment button */
 .horizontal-increment, .vertical-increment {
   height: .15em;
-  width: 1em;
+  width: 100%;
   background-color: gray;
-  position: absolute;
-  border-radius: 50%;
+  pointer-events: none;
 }
 
 .vertical-increment {
+  position: relative;
   transform: rotate(90deg);
 }
 
 /* Delete Button */
 .horizontal-delete, .vertical-delete {
   height: .15em;
-  width: 1.7em;
+  width: 100%;
   background-color: gray;
-  border-radius: 50%;
+  pointer-events: none;
 }
 
 .horizontal-delete {
+  position: relative;
   transform: rotate(45deg);
 }
 
 .vertical-delete {
+  position: relative;
   transform: rotate(-45deg);
 }
 
