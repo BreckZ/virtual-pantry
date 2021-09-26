@@ -55,7 +55,7 @@ function ListItems(props) {
         {itemNames.map((item) => {
           return (
             <div className="listitems-display" key={item.id}>
-              <button className="decrement display-button" onClick={() => { handleDecrement(item) }}>-</button>
+              <div className="decrement display-button" onClick={() => { handleDecrement(item) }}>-</div>
               {/* <FontAwesomeIcon onClick={() => { handleDecrement(item) }} className="decrement" icon={faMinus} size="sm" /> */}
               <span className="quantity-display"> {item.fields.quantity} </span>
               <button className="increment display-button" onClick={() => { handleIncrement(item) }}>+</button>

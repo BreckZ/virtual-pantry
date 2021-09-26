@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
   background-image: url("https://i.imgur.com/Ab3fiOP.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
   height: 36vh;
   width: 100%;
   overflow: scroll;
-  border: 1px solid black;
+  border: 1px solid purple;
 }
 
 .listitems-display {
@@ -32,28 +32,31 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  border: 1px solid green;
 }
 
 /* ListItem elements */
 .display-button {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   height: 25px;
   width: 25px;
   border-radius: 50px;
 }
 
 .decrement {
-  font-size: 15px;
+  font-size: 2em;
+  border: 1px solid black;
+  width: 35px;
 }
 
 .quantity-display {
   width: 45px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .increment {
@@ -63,14 +66,14 @@
 .uofm-display {
   width: 35px;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   overflow: hidden;
   white-space: nowrap;
   margin: 5px;
 }
 .food-name {
   width: 100px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   overflow: hidden;
   white-space: nowrap;

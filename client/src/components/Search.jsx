@@ -69,7 +69,7 @@ function Search(props) {
           Pantr<span className="white-title">y Pal</span>
         </span>
       </div>
-      <div autofocus className="search-bar'container">
+      <div className="search-bar'container">
         <SearchBar searchName={searchName} setSearchName={setSearchName} />
       </div>
       <div className="search-results-container">
