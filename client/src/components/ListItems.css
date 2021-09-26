@@ -50,7 +50,7 @@
   align-items: center;
   height: 2em;
   width: 2em;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 50%;
   outline: none;
   background-color: white;
@@ -85,9 +85,8 @@
 /* Delete Button */
 .horizontal-delete, .vertical-delete {
   height: .15em;
-  width: 1em;
+  width: 1.7em;
   background-color: gray;
-  position: absolute;
   border-radius: 50%;
 }
 
