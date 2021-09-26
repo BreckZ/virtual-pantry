@@ -4,6 +4,9 @@
   justify-content: center;
   height: 15vh;
   background-image: url('https://i.imgur.com/Ab3fiOP.jpg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position: left;
   font-size: 50px;
   font-weight: 700;
   top: 0;

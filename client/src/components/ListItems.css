@@ -6,7 +6,8 @@
   height: 15vh;
   background-image: url("https://i.imgur.com/Ab3fiOP.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position-x: center;
+  background-position: 0;
   transform: rotate(180deg);
   margin-bottom: 10px;
   top: 0;
@@ -23,7 +24,7 @@
 
 .listitems-container {
   /* display: flex; */
-  height: 36vh;
+  height: 45vh;
   width: 100%;
   overflow: scroll;
   border: 1px solid purple;
@@ -42,25 +43,25 @@
 
 /* ListItem elements */
 .display-button {
+  background-color: white;
+  font-weight: 400;
   text-align: center;
-  font-size: 1em;
-  height: 1.2em;
-  width: 1.2em;
-  border: 1px solid black;
+  font-size: .7em;
+  height: 2em;
+  width: 2em;
+  border: 1px solid lightgray;
+  box-shadow: 0 1px 1px gray;
   border-radius: 50px;
 }
 
-.decrement {
-
+.display-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 1px white;
 }
-
 .quantity-display {
   width: 45px;
   text-align: center;
   font-size: 16px;
-}
-
-.increment {
 }
 
 .uofm-display {
@@ -87,4 +88,5 @@
 }
 
 .delete-button {
+  line-height: 50%;
 }
