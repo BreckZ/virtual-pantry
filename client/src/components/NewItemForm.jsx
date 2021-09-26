@@ -44,7 +44,7 @@ function NewItemForm(props) {
               className="qty-input form-input"
               type="number"
               min="1"
-              max="999"
+              max="99"
               value={props.quantity}
               onChange={(e) => props.setQuantity(e.target.valueAsNumber)}
               placeholder="Qty"
