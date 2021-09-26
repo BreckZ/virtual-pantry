@@ -24,9 +24,10 @@
 
 .listitems-container {
   /* display: flex; */
-  height: 45vh;
+  height: 42vh;
   width: 100%;
   overflow: scroll;
+  white-space: ;
   border: 1px solid purple;
 }
 
@@ -40,7 +41,6 @@
   margin-top: 1vh;
   margin-bottom: 1vh;
   border: 1px solid green;
-  overflow: scroll;
 }
 
 /* ListItem elements */
