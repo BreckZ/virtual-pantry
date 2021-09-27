@@ -61,8 +61,8 @@ function ListItems(props) {
                   handleDecrement(item);
                 }}
               >
-                {/* <div className="horizontal-decrement"></div> */}
-                &#8722;
+                <div className="horizontal-decrement"></div>
+                {/* &#8722; */}
               </button>
               <span className="quantity-display"> {item.fields.quantity} </span>
               <button
@@ -71,9 +71,9 @@ function ListItems(props) {
                   handleIncrement(item);
                 }}
               >
-                {/* <div className="horizontal-increment"></div>
-                <div className="vertical-increment"></div> */}
-                &#43;
+                <div className="horizontal-increment"></div>
+                <div className="vertical-increment"></div>
+                {/* &#43; */}
               </button>
               {/* <FontAwesomeIcon onClick={() => { handleIncrement(item) }} className="increment" icon={faPlus} size="sm" /> */}
               <span className="uofm-display"> {item.fields.uofm} </span>
