@@ -31,7 +31,6 @@
   height: 42vh;
   width: 90%;
   overflow: scroll;
-  border: 1px solid purple;
 }
 
 .listitems-display {
@@ -43,7 +42,6 @@
   width: 95%;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  border: 1px solid green;
   white-space: nowrap;
 }
 
@@ -61,14 +59,18 @@
   box-shadow: 0 0 2px white;
 }
 
+.decrement {
+  margin-left: 1em;
+}
+
 .quantity-display {
-  width: 15px;
+  width: 1.5em;
   text-align: center;
   font-size: 16px;
 }
 
 .uofm-display {
-  width: 30px;
+  width: 2.5em;
   text-align: left;
   font-size: 16px;
   overflow: hidden;

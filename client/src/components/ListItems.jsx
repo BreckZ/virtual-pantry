@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { changeQuantity, deleteItem, getItems } from "../services/API";
-import "./ListItems.css";
 import { HiOutlinePlusCircle } from 'react-icons/hi';
 import { HiOutlineMinusCircle } from 'react-icons/hi';
 import { HiOutlineXCircle } from 'react-icons/hi';
+import "./ListItems.css";
 
 function ListItems(props) {
   const [itemNames, setItemNames] = useState([]);

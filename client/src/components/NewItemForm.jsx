@@ -71,6 +71,7 @@ function NewItemForm(props) {
             <div className="form-switch-container">
 
               <input
+                className="location-dial"
                 type="radio"
                 value="pantry"
                 // checked={pantry === true}
@@ -78,9 +79,10 @@ function NewItemForm(props) {
                 onChange={
                   (e) => { handlePantrySwitch(e) } }
               />
-              <label>Pantry</label>
+              <label className="location-label">Pantry</label>
 
               <input
+                className="location-dial"
                 type="radio"
                 value="fridge"
                 // checked={fridge === false}
@@ -88,9 +90,10 @@ function NewItemForm(props) {
                 onChange={
                   (e) => { handleFridgeSwitch(e) } }
               />
-              <label>Fridge</label>
+              <label className="location-label">Fridge</label>
 
               <input
+                className="location-dial"
                 type="radio"
                 value="freezer"
                 // checked={freezer === false}
@@ -98,7 +101,7 @@ function NewItemForm(props) {
                 onChange={
                   (e) => { handleFreezerSwitch(e) } }
               />
-              <label>Freezer</label>
+              <label className="location-label">Freezer</label>
 
 
               <div className="pantry-switch">
