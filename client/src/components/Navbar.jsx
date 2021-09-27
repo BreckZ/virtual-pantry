@@ -14,13 +14,13 @@ function Navbar() {
     <>
       <div className="Navbar">
         <Link to="/">
-          <span>|Home|</span>
+          <span className="links">Home</span>
         </Link>
         <Link to="/search">
-          <span>|Search|</span>
+          <span className="links">Search</span>
         </Link>
         <Link to="/pantry">
-          <span>|Pantry|</span>
+          <span className="links">Pantry</span>
         </Link>
       </div>
     </>

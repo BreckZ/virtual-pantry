@@ -5,8 +5,9 @@
   height: 15vh;
   background-image: url('https://i.imgur.com/Ab3fiOP.jpg');
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: right;
   background-position: left;
+  background-size: cover;
   font-size: 50px;
   font-weight: 700;
   top: 0;
@@ -33,7 +34,7 @@
   font-weight: 400;
   color: gray;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 2em;
   border: 1px solid lightgray;
   box-shadow: 0 1px 1px gray;
   background-color: white;
@@ -56,7 +57,6 @@
   height: 53vh;
   width: 90%;
   align-self: center;
-  border: 1px solid black;
   overflow: scroll;
 }
 
@@ -119,3 +119,174 @@
 .delete-button {
   line-height: 50%;
 }
+
+@media screen and (min-width: 600px) {
+
+  .homepage-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-image: url('https://i.imgur.com/Ab3fiOP.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 50px;
+    font-weight: 700;
+    top: 0;
+    position: sticky;
+  }
+
+  .filter-button {
+    height: 4em;
+    width: 8em;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: gray;
+    text-align: center;
+    border-radius: 2em;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 1px gray;
+    background-color: white;
+  }
+  
+  .filter-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 1px white;
+  }
+
+  /* ListItem elements */
+.display-button {
+  height: 2em;
+  width: 2em;
+  font-size: 1em;
+  color: lightgray;
+  
+}
+
+.display-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 2px white;
+}
+
+.decrement {
+  margin-left: 4em;
+}
+
+.quantity-display {
+  width: 1.5em;
+  text-align: center;
+  font-size: 16px;
+}
+
+.uofm-display {
+  width: 2.5em;
+  text-align: left;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.food-name {
+  width: 150px;
+  font-size: 16px;
+  text-align: left;
+  overflow: hidden;
+  
+}
+
+.location-display {
+  width: 45px;
+  font-size: 18;
+}
+
+.delete-button {
+  line-height: 50%;
+}
+
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .homepage-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15vh;
+      background-image: url('https://i.imgur.com/Ab3fiOP.jpg');
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-size: cover;
+      font-size: 50px;
+      font-weight: 700;
+      top: 0;
+      position: sticky;
+    }
+  
+    .filter-button {
+      height: 4em;
+      width: 8em;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: gray;
+      text-align: center;
+      border-radius: 2em;
+      border: 1px solid lightgray;
+      box-shadow: 0 1px 1px gray;
+      background-color: white;
+    }
+    
+    .filter-button:active {
+      transform: translateY(1px);
+      box-shadow: 0 0 1px white;
+    }
+  
+    /* ListItem elements */
+  .display-button {
+    height: 2em;
+    width: 2em;
+    font-size: 1em;
+    color: lightgray;
+    
+  }
+  
+  .display-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 2px white;
+  }
+  
+  .decrement {
+    margin-left: 4em;
+  }
+  
+  .quantity-display {
+    width: 1.5em;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .uofm-display {
+    width: 2.5em;
+    text-align: left;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .food-name {
+    width: 150px;
+    font-size: 16px;
+    text-align: left;
+    overflow: hidden;
+    
+  }
+  
+  .location-display {
+    width: 45px;
+    font-size: 18;
+  }
+  
+  .delete-button {
+    line-height: 50%;
+  }
+  
+  
+    }
