@@ -45,15 +45,11 @@
 
 /* ListItem elements */
 .display-button {
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center;  */
   height: 2em;
   width: 2em;
-  border: 1px solid lightgray;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 1px 2px gray;
+  font-size: 1em;
+  color: lightgray;
+  
 }
 
 .display-button:active {
@@ -64,7 +60,7 @@
 /* Decrement button */
 .horizontal-decrement {
   height: .15em;
-  width: 100%;
+  width: 1.5em;
   background-color: gray;
   pointer-events: none;
 }
@@ -72,13 +68,13 @@
 /* Increment button */
 .horizontal-increment, .vertical-increment {
   height: .15em;
-  width: 100%;
+  width: 1.5em;
   background-color: gray;
   pointer-events: none;
 }
 
 .vertical-increment {
-  position: relative;
+  position:absolute;
   transform: rotate(90deg);
 }
 
