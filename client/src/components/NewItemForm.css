@@ -35,7 +35,7 @@
 }
 
 .form-input {
-  margin: 0 1em 0 1em;
+  margin: 0 .3em 0 .3em;
   border-radius: 14px;
 }
 
@@ -108,7 +108,7 @@
   .form-component {
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     height: 33vh;
     width: 100%;
     justify-content: center;
@@ -116,11 +116,61 @@
   }
   .new-item-form-container {
     position: absolute;
-    bottom: 3%;
+    bottom: 8%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
+    height: 27vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px  rgb(185, 183, 183);
+  }
+
+  .form-input {
+    margin: 0 1em 0 1em;
+  }
+
+  .form-switch-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    
+  }
+  
+  .location-label {
+    font-size: 1.25em;
+    margin: 0 1em 0 1em;
+}
+
+.form-input-container {
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .form-component {
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    height: 33vh;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(245, 244, 244);
+  }
+  .new-item-form-container {
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
     height: 27vh;
     background-color: white;
     border-radius: 25px;

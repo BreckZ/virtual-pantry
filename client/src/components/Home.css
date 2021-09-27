@@ -5,9 +5,10 @@
   height: 15vh;
   background-image: url('https://i.imgur.com/Ab3fiOP.jpg');
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position: left;
-  background-size: cover;
+  background-position-x: 1fr;
+  position: 0;
+  
+  transform: rotate(180deg);
   font-size: 50px;
   font-weight: 700;
   top: 0;
@@ -18,6 +19,7 @@
   text-align: Center;
   font-size: 40px;
   font-family: 'Libre Baskerville', serif;
+  transform: rotate(180deg)
 }
 
 .filter-bar {
@@ -152,6 +154,18 @@
   .filter-button:active {
     transform: translateY(1px);
     box-shadow: 0 0 1px white;
+  }
+
+  .filter-results-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-results {
+    height: 53vh;
+    width: 75%;
+    align-self: center;
+    overflow: scroll;
   }
 
   /* ListItem elements */

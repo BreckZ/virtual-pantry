@@ -13,7 +13,7 @@
 }
 
 .search-bar-title {
-  color: white;
+  color: black;
   text-align: Center;
   font-size: 40px;
   font-family: 'Libre Baskerville', serif;
@@ -145,6 +145,18 @@
   outline: none;
 }
 
+.search-results-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-results {
+  height: 53vh;
+  width: 70%;
+  align-self: center;
+  overflow: scroll;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -172,4 +184,16 @@
     outline: none;
   }
   
+  .search-results-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-results {
+    height: 53vh;
+    width: 60%;
+    align-self: center;
+    overflow: scroll;
+  }
+
   }
