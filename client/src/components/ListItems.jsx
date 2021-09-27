@@ -51,6 +51,7 @@ function ListItems(props) {
       <div className="listitems-banner">
         <span className="listitems-title">Pantry Pal</span>
       </div>
+      <div className="listitems-center">
       <div className="listitems-container">
         {itemNames.map((item) => {
           return (
@@ -76,7 +77,8 @@ function ListItems(props) {
             </div>
           );
         })}
-      </div>
+        </div>
+        </div>
     </>
   );
 }
