@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { getItems, changeQuantity, deleteItem } from "../services/API";
+import { HiOutlinePlusCircle } from "react-icons/hi";
+import { HiOutlineMinusCircle } from "react-icons/hi";
+import { HiOutlineXCircle } from "react-icons/hi";
 import "./Home.css";
 
 function Home(props) {
@@ -108,27 +111,26 @@ function Home(props) {
         <div className="filter-results">
           {filterItems.map((item) => {
             return (
-              <div key={item.id}>
-                <button
-                  onClick={() => {
-                    handleDecrement(item);
-                  }}
-                >
-                  -
-                </button>
-                <span> {item.fields.quantity} </span>
-                <button
+              <div className="listitems-display" key={item.id}>
+              <HiOutlineMinusCircle className="display-button decrement" onClick={() => {
+                  handleDecrement(item);
+                }}/>
+              
+              <span className="quantity-display"> {item.fields.quantity} </span>
+              
+                
+                <HiOutlinePlusCircle
+                  className="display-button increment"
                   onClick={() => {
                     handleIncrement(item);
                   }}
-                >
-                  +
-                </button>
-                <span> {item.fields.uofm} </span>
-                <span> {item.fields.name} </span>
-                <span> {item.fields.location} </span>
-                <button onClick={() => handleDelete(item.id)}>delete</button>
-              </div>
+                />
+              <span className="uofm-display"> {item.fields.uofm} </span>
+              <span className="food-name"> {item.fields.name} </span>
+              <span className="location-display"> {item.fields.location} </span>
+              <HiOutlineXCircle className="display-button delete" onClick={() => handleDelete(item.id)}/>
+              
+            </div>
             );
           })}
         </div>
