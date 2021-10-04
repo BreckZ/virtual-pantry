@@ -61,13 +61,13 @@ base('items').create([
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sep 20| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Sep 21| Project Approval / Core Application Structure (HTML,CSS. js) / API calls working properly | Complete
-|Sep 22| Pseudocode / actual code / functionality / MVP | Complete
-|Sep 23| Styling Styling and More Styling / Start Post-MVP | Complete
-|Sep 24| Post-MVP| Complete
-|Sep 25| Post-MVP| Complete
-|Sep 26| Post-MVP| Complete
+|Sep 20| Prompt / Wireframes / Deploy / Timeframes | Complete
+|Sep 21| Build API Calls / Make API calls / Build out Home Component | Complete
+|Sep 22| Build out List component / Build out Navbar / Build out List | Complete
+|Sep 23| Run routes and check connectivity / Build out New component | Complete
+|Sep 24| Post-MVP / build out Search / Build out Put and Delete Requests| Complete
+|Sep 25| Styling Components| Complete
+|Sep 26| Styling Components| Complete
 |Sep 27| Presentations | Complete
 
 ## Timeframes
